@@ -1,0 +1,9 @@
+[SYSTEM CONFIGURATION]
+Version: 1.0.4b (Legacy)
+Database: prod_db_01
+Status: Deprecated
+
+# SECURITY WARNING: 
+# We noticed developers are leaving backup files in this directory.
+# Ensure that .env.bak is deleted immediately. 
+# It contains sensitive environment variables!

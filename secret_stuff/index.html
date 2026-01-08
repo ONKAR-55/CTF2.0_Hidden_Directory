@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secret Area</title>
+</head>
+<body>
+    <h1>Secret Development Area</h1>
+    <p>This is a restricted area. There might be something interesting here.</p>
+    
+    <button id="flagButton" disabled>Get Secret Flag</button>
+
+    <!-- The functionality is embedded here. -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const flagButton = document.getElementById('flagButton');
+
+            // The button is disabled by default. You'll need to enable it using the developer console.
+            
+            flagButton.addEventListener('click', () => {
+                console.log('Button clicked! Fetching flag...');
+                fetch('/dev_backup/get_flag')
+                    .then(response => response.text())
+                    .then(flag => {
+                        alert(`Success! Here is your flag: ${flag}`);
+                        console.log('Flag received and displayed!');
+                    })
+                    .catch(err => {
+                        console.error('Failed to fetch flag:', err);
+                        alert('Error fetching the flag. Check the console.');
+                    });
+            });
+
+            console.log('Page loaded. The button is waiting to be enabled.');
+        });
+    </script>
+    
+    <p><em>Legacy System v1.2.0</em></p>
+</body>

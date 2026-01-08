@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# TODO: The migration from /secret_stuff to the new path is complete.
+# The old /dev_backup directory should be restricted to internal IPs only.
+# - Admin
