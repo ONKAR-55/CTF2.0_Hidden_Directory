@@ -22,7 +22,7 @@
                     .then(response => response.text())
                     .then(flag => {
                         alert(`Success! Here is your flag: ${flag}`);
-                        console.log('Flag received and displayed!');
+                        console.log(`Flag received and displayed! ${flag}`);
                     })
                     .catch(err => {
                         console.error('Failed to fetch flag:', err);
