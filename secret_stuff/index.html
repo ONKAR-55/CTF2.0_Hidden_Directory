@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>Secret Area</title>
+    <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
     <h1>Secret Development Area</h1>
     <p>This is a restricted area. There might be something interesting here.</p>
+    <p>Do not change anything at Development area.</p>
     
-    <button id="flagButton" disabled>Get Secret Flag</button>
+    <button id="flagButton" disabled class="flagbtn">Get Secret Flag</button>
 
     <!-- The functionality is embedded here. -->
     <script>
@@ -21,7 +23,7 @@
                 fetch('/dev_backup/get_flag')
                     .then(response => response.text())
                     .then(flag => {
-                        alert(`Success! Here is your flag: ${flag}`);
+                        alert(`Success! Here is your check the console`);
                         console.log(`Flag received and displayed! ${flag}`);
                     })
                     .catch(err => {
