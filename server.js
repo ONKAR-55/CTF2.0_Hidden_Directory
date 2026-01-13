@@ -13,7 +13,7 @@ app.get('/dev_backup', (req, res) => {
 
 // Route to provide the flag (corrected to avoid conflict with /dev_backup)
 app.get('/dev_backup/get_flag', (req, res) => {
-    const flag = "CSBC{MY_flag_2026}";
+    const flag = "CSBC{Hidden_Secreat_Found!}";
     res.send(flag);
 });
 

@@ -1,0 +1,51 @@
+
+/* body style */
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #00ff41; /* Classic Matrix/Terminal Green */
+            --accent-color: #008f11;
+            --dim-text: #003b00;
+            --font-mono: 'Courier New', Courier, monospace;
+            --border-style: 1px solid #00ff41;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Glitch Animation for Header */
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: 4px;
+            animation: glitch 3s infinite linear alternate-reverse;
+            border-left: 8px solid var(--text-color);
+            padding-left: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        .flagbtn {
+            background-color: rgba(172, 255, 47, 0.142);
+            color: red;
+            border: red 1px solid;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
